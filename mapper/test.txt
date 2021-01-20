@@ -1,0 +1,478 @@
+Configuration is 'release'
+ar rvs libstreetmap.a build/release/libstreetmap/src/mapDataStruct.o build/release/libstreetmap/src/m1.o
+r - build/release/libstreetmap/src/mapDataStruct.o
+r - build/release/libstreetmap/src/m1.o
+g++ build/release/libstreetmap/tests/tester_main.o build/release/libstreetmap/tests/unitTest.o build/release/libstreetmap/tests/example_test.o build/release/libstreetmap/tests/m1_func_intersection_saint_helena_public.o build/release/libstreetmap/tests/m1_func_first_function.o build/release/libstreetmap/tests/m1_func_spatial_saint_helena_public.o build/release/libstreetmap/tests/m1_func_street_saint_helena_public.o build/release/libstreetmap/tests/m1_perf_intersection_toronto_canada_public.o build/release/libstreetmap/tests/m1_func_intersection_toronto_canada_public.o build/release/libstreetmap/tests/m1_load_maps_public.o build/release/libstreetmap/tests/m1_perf_spatial_toronto_canada_public.o build/release/libstreetmap/tests/m1_func_spatial_toronto_canada_public.o build/release/libstreetmap/tests/m1_func_distance-time_saint_helena_public.o build/release/libstreetmap/tests/m1_perf_street_toronto_canada_public.o build/release/libstreetmap/tests/m1_func_street_toronto_canada_public.o build/release/libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.o build/release/libstreetmap/tests/m1_func_distance-time_toronto_canada_public.o libstreetmap.a -lunittest++   -L. /cad2/ece297s/public/lib/release/libstreetsdatabase.a  -lboost_serialization   -lX11 -lXft -lfontconfig -lfreetype -lcairo -fopenmp -lreadline  -o test_libstreetmap
+
+Running Unit Tests...
+./test_libstreetmap
+Successfully loaded map '/cad2/ece297s/public/maps/toronto_canada.streets.bin'
+254 16537 Streets database is already loaded
+libstreetmap/tests/m1_func_intersection_saint_helena_public.cpp:24: error: Failure in intersection_street_segments: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_intersection_saint_helena_public.cpp:105: error: Failure in intersection_street_names: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_intersection_saint_helena_public.cpp:186: error: Failure in directly_connected: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_intersection_saint_helena_public.cpp:219: error: Failure in adjacent_intersections: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_first_function.cpp:13: error: Failure in streets: Unhandled exception: No map open
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:58: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:62: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:66: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:70: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:74: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:78: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:82: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:86: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:96: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:100: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:104: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:108: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:112: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:116: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:120: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:124: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:128: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:132: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:136: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:140: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:144: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:148: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_saint_helena_public.cpp:152: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_street_saint_helena_public.cpp:24: error: Failure in street_street_segments: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_street_saint_helena_public.cpp:105: error: Failure in all_street_intersections: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_street_saint_helena_public.cpp:186: error: Failure in intersection_ids_from_street_names: Unhandled exception: Crash!
+libstreetmap/tests/m1_perf_intersection_toronto_canada_public.cpp:41: error: Failure in intersection_street_segments_perf: Unhandled exception: Crash!
+libstreetmap/tests/m1_perf_intersection_toronto_canada_public.cpp:211: error: Failure in intersection_street_names_perf: Unhandled exception: Crash!
+libstreetmap/tests/m1_perf_intersection_toronto_canada_public.cpp:381: error: Failure in directly_connected_perf: Unhandled exception: Crash!
+libstreetmap/tests/m1_perf_intersection_toronto_canada_public.cpp:460: error: Failure in adjacent_intersections_perf: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_intersection_toronto_canada_public.cpp:24: error: Failure in intersection_street_segments: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_intersection_toronto_canada_public.cpp:180: error: Failure in intersection_street_names: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_intersection_toronto_canada_public.cpp:336: error: Failure in directly_connected: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_intersection_toronto_canada_public.cpp:399: error: Failure in adjacent_intersections: Unhandled exception: Crash!
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:48: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:52: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:56: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:60: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:64: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:68: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:72: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:76: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:80: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:84: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:88: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:92: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:96: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:100: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:104: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:108: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:112: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:116: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:120: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:124: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:128: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:132: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:136: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:140: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:144: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:148: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:152: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:156: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:160: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:164: error: Failure in closest_poi_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:188: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:192: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:196: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:200: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:204: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:208: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:212: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:216: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:220: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:224: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:228: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:232: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:236: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:240: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:244: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:248: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:252: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:256: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:260: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:264: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:268: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:272: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:276: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:280: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:284: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:288: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:292: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:296: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:300: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_perf_spatial_toronto_canada_public.cpp:304: error: Failure in closest_intersection_perf: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:30: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:34: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:38: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:42: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:46: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:50: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:54: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:58: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:62: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:66: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:70: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:74: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:78: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:82: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:86: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:90: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:94: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:98: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:102: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:106: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:110: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:114: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:118: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:122: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:126: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:130: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:134: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:138: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:142: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:146: error: Failure in closest_poi: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:156: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:160: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:164: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:168: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:172: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:176: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:180: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:184: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:188: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:192: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:196: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:200: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:204: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:208: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:212: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:216: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:220: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:224: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:228: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:232: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:236: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:240: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:244: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:248: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:252: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:256: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:260: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:264: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:268: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_spatial_toronto_canada_public.cpp:272: error: Failure in closest_intersection: valid_results.count(actual)
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:30: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:34: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:38: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:42: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:46: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:50: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:54: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:58: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:62: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:66: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:70: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:74: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:78: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:82: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:86: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:96: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:100: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:104: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:108: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:112: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:116: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:120: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:124: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:128: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:132: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:136: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:140: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:144: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:148: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:152: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:162: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:166: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:170: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:174: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:178: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:182: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:186: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:190: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:194: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:198: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:202: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:206: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:210: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:214: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:218: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:228: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:232: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:236: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:240: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:244: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:248: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:252: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:256: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:260: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:264: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:268: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:272: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:276: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:280: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_saint_helena_public.cpp:284: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_street_toronto_canada_public.cpp:41: error: Failure in street_street_segments_perf: Unhandled exception: Crash!
+libstreetmap/tests/m1_perf_street_toronto_canada_public.cpp:211: error: Failure in all_street_intersections_perf: Unhandled exception: Crash!
+libstreetmap/tests/m1_perf_street_toronto_canada_public.cpp:381: error: Failure in intersection_ids_from_street_names_perf: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_street_toronto_canada_public.cpp:24: error: Failure in street_street_segments: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_street_toronto_canada_public.cpp:180: error: Failure in all_street_intersections: Unhandled exception: Crash!
+libstreetmap/tests/m1_func_street_toronto_canada_public.cpp:336: error: Failure in intersection_ids_from_street_names: Unhandled exception: Crash!
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:48: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:52: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:56: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:60: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:64: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:68: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:72: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:76: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:80: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:84: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:88: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:92: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:96: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:100: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:104: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:108: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:112: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:116: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:120: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:124: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:128: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:132: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:136: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:140: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:144: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:148: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:152: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:156: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:160: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:164: error: Failure in distance_between_two_points_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:190: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:194: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:198: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:202: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:206: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:210: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:214: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:218: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:222: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:226: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:230: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:234: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:238: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:242: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:246: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:250: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:254: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:258: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:262: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:266: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:270: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:274: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:278: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:282: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:286: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:290: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:294: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:298: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:302: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:306: error: Failure in street_segment_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:330: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:334: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:338: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:342: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:346: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:350: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:354: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:358: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:362: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:366: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:370: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:374: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:378: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:382: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:386: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:390: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:394: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:398: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:402: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:406: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:410: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:414: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:418: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:422: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:426: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:430: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:434: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:438: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:442: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:446: error: Failure in street_length_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:470: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:474: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:478: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:482: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:486: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:490: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:494: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:498: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:502: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:506: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:510: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:514: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:518: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:522: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:526: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:530: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:534: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:538: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:542: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:546: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:550: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:554: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:558: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:562: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:566: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:570: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:574: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:578: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:582: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_perf_distance-time_toronto_canada_public.cpp:586: error: Failure in street_segment_travel_time_perf: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:30: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:34: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:38: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:42: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:46: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:50: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:54: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:58: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:62: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:66: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:70: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:74: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:78: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:82: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:86: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:90: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:94: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:98: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:102: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:106: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:110: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:114: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:118: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:122: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:126: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:130: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:134: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:138: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:142: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:146: error: Failure in distance_between_two_points: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:156: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:160: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:164: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:168: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:172: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:176: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:180: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:184: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:188: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:192: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:196: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:200: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:204: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:208: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:212: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:216: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:220: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:224: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:228: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:232: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:236: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:240: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:244: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:248: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:252: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:256: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:260: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:264: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:268: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:272: error: Failure in street_segment_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:282: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:286: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:290: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:294: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:298: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:302: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:306: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:310: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:314: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:318: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:322: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:326: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:330: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:334: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:338: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:342: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:346: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:350: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:354: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:358: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:362: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:366: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:370: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:374: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:378: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:382: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:386: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:390: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:394: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:398: error: Failure in street_length: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:408: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:412: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:416: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:420: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:424: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:428: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:432: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:436: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:440: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:444: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:448: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:452: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:456: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:460: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:464: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:468: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:472: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:476: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:480: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:484: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:488: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:492: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:496: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:500: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:504: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:508: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:512: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:516: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:520: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+libstreetmap/tests/m1_func_distance-time_toronto_canada_public.cpp:524: error: Failure in street_segment_travel_time: relative_error(expected, actual) < 0.001
+FAILURE: 40 out of 49 tests failed (465 failures).
+Test time: 13.72 seconds.
+Makefile:318: recipe for target 'test' failed
