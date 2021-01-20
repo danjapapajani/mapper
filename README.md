@@ -1,2 +1,2 @@
 # mapper
-Milestones for the infamous Google Maps Course, Winter 2018
+Milestones can be found in /libstreetmap/src
